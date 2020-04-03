@@ -1,0 +1,35 @@
+/* Salvattore */
+.column {
+    float: left;
+}
+.size-1of4 {
+    width: 25%;
+}
+.size-1of3 {
+    width: 33.333%;
+}
+.size-1of2 {
+    width: 50%;
+}
+.columns-blog #timeline[data-columns]::before {
+	@include breakpoint(small) {
+    	content: '1 .column';
+    }
+    @include breakpoint(medium up){
+    	content: '3 .column.size-1of3';
+    }
+}
+
+.columns-portfolio #timeline[data-columns]::before {
+	@include breakpoint(small) {
+    	content: '1 .column';
+    }
+    @include breakpoint(medium up){
+    	content: '3 .column.size-1of3';
+    }
+}
+
+#timeline p {
+	margin: .5em .25em;
+}
+

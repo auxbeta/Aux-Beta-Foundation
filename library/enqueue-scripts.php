@@ -60,6 +60,22 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		// Enqueue FontAwesome from CDN. Uncomment the line below if you need FontAwesome.
 		//wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/5016a31c8c.js', array(), '4.7.0', true );
 
+		//AUX BETA ADDITIONS
+		// AuxBeta.js
+		wp_register_script( 'auxbeta-js', get_stylesheet_directory_uri() . '/src/assets/js/lib/auxbeta-scripts.js', array(), '1.1.0', true );
+		// Fit Vids 
+		wp_register_script( 'fit-vids', get_stylesheet_directory_uri() . '/src/assets/js/lib/jquery.fitvids.js', array(), '1.1.0', true );
+		// Salvattore 
+// 		wp_register_script( 'salvattore', get_stylesheet_directory_uri() . '/src/assets/js/lib/salvattore.min.js', array(), '1.0.9', true );
+		// skrollr 
+// 		wp_register_script( 'skrollr', get_stylesheet_directory_uri() . '/library/js/libs/skrollr.min.js', array(), '0.6.30', true );
+			
+		//AUX BETA ADDITIONS
+		wp_enqueue_script( 'auxbeta-js' );
+		wp_enqueue_script( 'fit-vids' );
+// 		wp_enqueue_script( 'skrollr' );
+// 		wp_enqueue_script( 'salvattore' );
+
 		// Add the comment-reply library on pages where it is necessary
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );

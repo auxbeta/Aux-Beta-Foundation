@@ -54,5 +54,17 @@ require_once( 'library/responsive-images.php' );
 /** Gutenberg editor support */
 require_once( 'library/gutenberg.php' );
 
+/** Add Aux Beta Customizer */
+require_once( 'library/ab-customizer.php' );
+
+/** Add Aux Beta Fonts */
+// require_once( 'library/ab-fonts.php' );
+
+/** Add Aux Beta Functions */
+require_once( 'library/ab-functions.php' );
+
+/** Add Aux Beta Shortcode */
+require_once( 'library/ab-shortcode.php' );
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );

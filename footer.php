@@ -9,11 +9,13 @@
  */
 ?>
 
-<footer class="footer-container">
-	<div class="footer-grid">
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
-	</div>
-</footer>
+<div class="ab-footer">
+	<footer class="footer-container">
+		<div class="footer-grid">
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		</div>
+	</footer>
+</div>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	</div><!-- Close off-canvas content -->
