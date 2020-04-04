@@ -7,7 +7,7 @@ function auxbeta_theme_customizer($wp_customize) {
   // $wp_customize->remove_section('colors');
   // $wp_customize->remove_section('background_image');
   // $wp_customize->remove_section('static_front_page');
-  // $wp_customize->remove_section('nav');
+  $wp_customize->remove_section('nav');
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');
   // Uncomment the following to change the default section titles
@@ -172,6 +172,33 @@ $wp_customize->add_control( 'header_layout', array(
 /**
  * Primary color.
  */
+/*
+$wp_customize->add_setting( 'header_background_color',
+   array(
+      'default' => 'rgba(209,0,55,0.7)',
+      'transport' => 'postMessage',
+      'sanitize_callback' => 'skyrocket_hex_rgba_sanitization'
+   )
+);
+ 
+$wp_customize->add_control( new Header_Background_Alpha_Color_Control( $wp_customize, 'header_background_color',
+   array(
+      'label' => __( 'Header Background Color' ),
+      'section' => 'header_customizer',
+      'show_opacity' => true, // Optional. Show or hide the opacity value on the opacity slider handle. Default: true
+      'palette' => array( // Optional. Select the colours for the colour palette . Default: WP color control palette
+         '#000',
+         '#fff',
+         '#df312c',
+         '#df9a23',
+         '#eef000',
+         '#7ed934',
+         '#1571c1',
+         '#8309e7'
+      )
+   )
+) );
+*/
 $wp_customize->add_setting( 'header_background_color', array(
 		'default'           => 'transparent',
 		'transport'         => 'postMessage',
@@ -204,6 +231,7 @@ $wp_customize->add_control( new WP_Customize_Color_Control(
 			'mode'        => 'hsl',
             'settings' 	=> 'header_color',
 ) ) );
+
 /**
  * Bind JS handlers to instantly live-preview changes.
  */
