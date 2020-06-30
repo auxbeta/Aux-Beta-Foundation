@@ -169,11 +169,7 @@ $wp_customize->add_control( 'header_layout', array(
 
 	// COLORS
 	
-/**
- * Primary color.
- */
-/*
-$wp_customize->add_setting( 'header_background_color',
+$wp_customize->add_setting( 'sample_alpha_color',
    array(
       'default' => 'rgba(209,0,55,0.7)',
       'transport' => 'postMessage',
@@ -181,10 +177,11 @@ $wp_customize->add_setting( 'header_background_color',
    )
 );
  
-$wp_customize->add_control( new Header_Background_Alpha_Color_Control( $wp_customize, 'header_background_color',
+$wp_customize->add_control( new Skyrocket_Customize_Alpha_Color_Control( $wp_customize, 'sample_alpha_color_picker',
    array(
-      'label' => __( 'Header Background Color' ),
-      'section' => 'header_customizer',
+      'label' => __( 'Alpha Color Picker Control' ),
+      'description' => esc_html__( 'Sample custom control description' ),
+      'section' => 'sample_custom_controls_section',
       'show_opacity' => true, // Optional. Show or hide the opacity value on the opacity slider handle. Default: true
       'palette' => array( // Optional. Select the colours for the colour palette . Default: WP color control palette
          '#000',
@@ -197,8 +194,9 @@ $wp_customize->add_control( new Header_Background_Alpha_Color_Control( $wp_custo
          '#8309e7'
       )
    )
-) );
-*/
+) );    
+
+/*
 $wp_customize->add_setting( 'header_background_color', array(
 		'default'           => 'transparent',
 		'transport'         => 'postMessage',
@@ -214,6 +212,7 @@ $wp_customize->add_control( 'header_background_color', array(
 		'section'  => 'header_customizer',
 		'priority' => 10,
 ) );
+*/
 
 // Add primary color hue setting and control.
 $wp_customize->add_setting(
