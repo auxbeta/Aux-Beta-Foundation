@@ -1,0 +1,37 @@
+/* Social Roll  */
+.facebook-roll {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-fb.png');}
+.facebook-roll:hover {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-fb-hover.png');}
+.instagram-roll {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-ig.png');}
+.instagram-roll:hover {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-ig-hover.png');}
+.footer-facebook-roll {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-fb-footer.png');}
+.footer-facebook-roll:hover {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-fb-hover.png');}
+.footer-instagram-roll {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-ig-footer.png');}
+.footer-instagram-roll:hover {
+	background-image: url('/wp-content/themes/fincogear/library/images/icon-ig-hover.png');}
+.social-roll {
+	height: 30px;
+	width: 30px;
+	margin: 0 10px;
+	float: left;
+	border-radius: 50%;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	background-repeat: no-repeat;
+	background-size: cover;}
+.social-roll:hover {
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	transform:rotate(360deg);}
